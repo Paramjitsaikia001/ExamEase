@@ -70,8 +70,3 @@ code {
   );
 }
 
-.shadowX {
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  /* Using the hexadecimal notation with alpha */
-  /* text-shadow: 0 4px 8px #0ea5df80; */
-}
