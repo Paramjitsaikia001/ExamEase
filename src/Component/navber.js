@@ -27,24 +27,24 @@ const Navbar = ({ darkMode }) => {
   return (
     <nav className="w-full md:w-auto logo-color">
       <div className="flex justify-between items-center md:hidden">
-        <button onClick={toggleMenu} className="text-black dark:text-[#000000] font-bold flex items-center">
+        <button onClick={toggleMenu} className={`text-black dark:text-[#000000] font-bold flex items-center  ${darkMode && isOpen ? 'text-white' : ''}`}>
           {getButtonText()} 
           <span className="material-symbols-outlined ml-2 mt-1">
             keyboard_arrow_down
           </span>
         </button>
       </div>
-      <ul className={`flex flex-col md:flex-row md:w-auto font-bold justify-evenly md:px-4 items-center rounded-full ${darkMode ? 'md:bg-[#3be8ff] text-black' : 'md:bg-[#9ff4ff] text-[#000000]'} h-auto md:h-8 ${isOpen ? 'block' : 'hidden'} md:flex`}>
-        <Link to="/ExamEase/" onClick={() => setIsOpen(false)}>
+      <ul className={`flex flex-col md:flex-row md:w-auto font-bold justify-evenly md:px-4 items-center rounded-full ${darkMode ? 'md:bg-[#3be8ff] text-black' : 'md:bg-[#9ff4ff] text-[#000000]'} h-auto md:h-8 ${isOpen ? 'block' : 'hidden'} md:flex ${darkMode && isOpen ? 'text-white' : ''}`}>
+        <Link to="/ExamEase/" >
           <li className={`h-full flex justify-center items-center list-none hover:bg-blue-400 md:px-5 py-1 md:py-0 rounded-full hover:font-semibold cursor-pointer ${!isOpen && location.pathname === '/ExamEase/' ? 'underline' : ''}`}>Home</li>
         </Link>
-        <Link to="/ExamEase/categories" onClick={() => setIsOpen(false)}>
+        <Link to="/ExamEase/categories" >
           <li className={`h-full flex justify-center items-center list-none hover:bg-blue-400 md:px-5 py-1 md:py-0 rounded-full hover:font-semibold cursor-pointer ${!isOpen && location.pathname === '/ExamEase/categories' ? 'underline' : ''}`}>Categories</li>
         </Link>
-        <Link to="/ExamEase/Random" onClick={() => setIsOpen(false)}>
+        <Link to="/ExamEase/Random" >
           <li className={`h-full flex justify-center items-center list-none hover:bg-blue-400 md:px-5 py-1 md:py-0 rounded-full hover:font-semibold cursor-pointer ${!isOpen && location.pathname === '/ExamEase/Random' ? 'underline' : ''}`}>Random</li>
         </Link>
-        <Link to="/ExamEase/about" onClick={() => setIsOpen(false)}>
+        <Link to="/ExamEase/about" >
           <li className={`h-full flex justify-center items-center list-none hover:bg-blue-400 md:px-5 py-1 md:py-0 rounded-full hover:font-semibold cursor-pointer ${!isOpen && location.pathname === '/ExamEase/about' ? 'underline' : ''}`}>About us</li>
         </Link>
       </ul>
