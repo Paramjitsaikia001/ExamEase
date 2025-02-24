@@ -60,7 +60,7 @@ const Footer = () => {
         <div className="mt-6 border-t border-gray-700 pt-4 text-center">
           <p className="text-sm">&copy; 2025 ExamEase. All rights reserved.</p>
           <p className="text-sm">
-            <Link to="/ExamEase/privacy-policy" className="hover:underline">Privacy Policy</Link> | <Link to="/terms-of-service" className="hover:underline">Terms of Service</Link>
+            <Link to="/ExamEase/privacy-policy" className="hover:underline">Privacy Policy</Link> | <Link to="/ExamEase/terms-of-service" className="hover:underline">Terms of Service</Link>
           </p>
         </div>
       </div>

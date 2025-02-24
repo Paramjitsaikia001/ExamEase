@@ -35,7 +35,7 @@ const AboutUs = () => {
     <div className="about-us bg-[#00e1ff] pb-[5rem] w-full overflow-hidden">
       {/* Header */}
       <Uppermain />
-      <div className="about-us-content p-4">
+      <div className="about-us-content p-4 py-16">
         <section className="about-us-text text-center mb-8">
           <h1 className="text-3xl font-bold mb-4">About ExamEase</h1>
           <p className="text-lg">

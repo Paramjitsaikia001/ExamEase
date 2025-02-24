@@ -17,15 +17,6 @@ code {
     monospace;
 }
 
-.bg-main {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/background.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  width: 100vw;
-  opacity: 1px;
-}
 
 /* Custom scrollbar styles */
 .categories-container::-webkit-scrollbar {
@@ -49,6 +40,36 @@ code {
   background: rgb(212,245,255);
   background: linear-gradient(90deg, rgba(212,245,255,1) 6%, rgba(94,214,234,1) 6%, rgba(0,189,218,1) 14%, rgba(212,245,255,1) 14%, rgba(223,248,251,1) 21%, rgba(0,189,218,1) 21%, rgba(64,206,228,1) 28%, rgba(223,248,251,1) 28%, rgba(255,255,240,1) 37%, rgba(0,189,218,1) 37%, rgba(0,189,218,1) 45%, rgba(174,242,255,1) 45%, rgba(212,245,255,1) 54%, rgba(0,189,218,1) 54%, rgba(0,189,218,1) 63%, rgba(212,245,255,1) 63%, rgba(212,245,255,1) 71%, rgba(0,189,218,1) 71%, rgba(0,189,218,1) 79%, rgba(195,247,255,1) 79%, rgba(179,245,255,1) 87%, rgba(0,189,218,1) 87%, rgba(0,189,218,1) 95%, rgba(217,250,255,1) 95%);
 }
+.Uppermain-bgcolor-dark {
+  background: linear-gradient(
+    90deg,
+    rgba(20, 30, 40, 1) 6%,       /* Dark slate */
+    rgba(30, 60, 70, 1) 6%,       /* Teal-ish dark */
+    rgba(10, 40, 60, 1) 14%,      /* Deep blue-teal */
+    rgba(20, 30, 40, 1) 14%,      /* Dark slate */
+    rgba(25, 50, 65, 1) 21%,      /* Muted blue */
+    rgba(10, 40, 60, 1) 21%,      /* Deep blue-teal */
+    rgba(15, 45, 70, 1) 28%,      /* Slightly brighter blue */
+    rgba(25, 50, 65, 1) 28%,      /* Muted blue */
+    rgba(40, 40, 40, 1) 37%,      /* Almost black gray */
+    rgba(10, 40, 60, 1) 37%,      /* Deep blue-teal */
+    rgba(10, 40, 60, 1) 45%,      /* Deep blue-teal */
+    rgba(35, 65, 85, 1) 45%,      /* Cool dark cyan */
+    rgba(20, 30, 40, 1) 54%,      /* Dark slate */
+    rgba(10, 40, 60, 1) 54%,      /* Deep blue-teal */
+    rgba(10, 40, 60, 1) 63%,      /* Deep blue-teal */
+    rgba(20, 30, 40, 1) 63%,      /* Dark slate */
+    rgba(20, 30, 40, 1) 71%,      /* Dark slate */
+    rgba(10, 40, 60, 1) 71%,      /* Deep blue-teal */
+    rgba(10, 40, 60, 1) 79%,      /* Deep blue-teal */
+    rgba(30, 60, 70, 1) 79%,      /* Teal-ish dark */
+    rgba(25, 50, 65, 1) 87%,      /* Muted blue */
+    rgba(10, 40, 60, 1) 87%,      /* Deep blue-teal */
+    rgba(10, 40, 60, 1) 95%,      /* Deep blue-teal */
+    rgba(35, 65, 85, 1) 95%       /* Cool dark cyan */
+  );
+}
+
 .logo-color{
   color: #5a0000;
 }

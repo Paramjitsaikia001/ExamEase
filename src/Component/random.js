@@ -20,7 +20,7 @@ const Random= () => {
    return (
       <div className="random bg-[#00e1ff] w-full overflow-x-hidden ">
          {/* Header */}<Uppermain/>
-         <div className="categories-header pb-3 flex items-center justify-center rounded-sm pt-12">
+         <div className="categories-header pb-3 flex items-center justify-center rounded-md pt-12">
             <h2 className="text-[3rem] font-bold text-black text-center">Random Quiz </h2>
          </div>
 

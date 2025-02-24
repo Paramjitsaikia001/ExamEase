@@ -7,6 +7,8 @@ import Random from './Component/random';
 import Quiz from './Component/Quiz';
 import Footer from './Component/footer';
 import AboutUs from './Component/aboutus';
+import PrivacyPolicy from './Component/privacy-policy';
+import TermsOfService from './Component/termsofservice';
 
 const App = () => {
   return (
@@ -18,6 +20,8 @@ const App = () => {
           <Route path="/ExamEase/categories" element={<Categories />} />
           <Route path="/ExamEase/random" element={<Random />} />
           <Route path="/ExamEase/About" element={<AboutUs />} />
+          <Route path="/ExamEase/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/ExamEase/terms-of-service" element={<TermsOfService />} />
           <Route path="/ExamEase/quiz/:category" element={<Quiz />} />
           {/* Add other routes as needed */}
         </Routes>

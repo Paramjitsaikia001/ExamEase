@@ -15,6 +15,7 @@ module.exports = {
         raleway: ['"Raleway"', 'sans-serif'],
         sourgummy: ['"Sour Gummy"', 'cursive'], // or other fallback
         stylescript: ['"Style Script"', 'cursive'],
+        pPlayfairDisplay:["Playfair Display","sans-serif"],
       },
     },
   },
