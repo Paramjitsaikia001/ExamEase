@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Uppermain from './Uppermain';
 
 const AboutUs = () => {
@@ -28,8 +28,11 @@ const AboutUs = () => {
     });
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
-    <div className="about-us bg-[#00e1ff] w-full overflow-hidden">
+    <div className="about-us bg-[#00e1ff] pb-[5rem] w-full overflow-hidden">
       {/* Header */}
       <Uppermain />
       <div className="about-us-content p-4">

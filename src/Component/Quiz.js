@@ -430,7 +430,7 @@ const Quiz = () => {
     if (quizData[category]) {
       setQuestions(quizData[category]);
     } else {
-      navigate("/");
+      navigate("/ExamEase/");
     }
   }, [category, navigate]);
 
@@ -461,11 +461,16 @@ const Quiz = () => {
     }
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center p-8">
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center p-8 w-[100%]">
       {!quizCompleted ? (
-        <>
-          <h1 className="text-3xl font-bold">{category} Quiz</h1>
+        <section className="flex flex-col items-center justify-center w-[100%]">
+          <h1 className="text-3xl font-bold flex items-center justify-center w-[100%] my-4">{category} Quiz</h1>
+          <div className="line my-4 h-1 bg-black w-[100%]"></div>
           <div className="bg-white shadow-lg p-6 rounded w-[80%] max-w-md mt-4">
             <p className="text-lg font-semibold">
               Question {currentQuestion + 1} / {questions.length}
@@ -501,7 +506,7 @@ const Quiz = () => {
               ))}
             </div>
           </div>
-        </>
+        </section>
       ) : (
         // Quiz Completed - Show Score
         <div className="bg-white shadow-lg p-6 rounded w-[80%] max-w-md mt-4 text-center">
@@ -519,10 +524,10 @@ const Quiz = () => {
 
           {/* Restart Quiz Button */}
           <button
-            onClick={() => navigate("/categories")}
+            onClick={() => navigate("/ExamEase/")}
             className="bg-blue-500 text-white px-4 py-2 rounded mt-4 hover:bg-blue-600"
           >
-            Go to Categories
+            Go to Home
           </button>
         </div>
       )}

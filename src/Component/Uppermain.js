@@ -23,17 +23,17 @@ const Uppermain = () => {
   const [tagline1, tagline2, buttonText] = getTagline();
 
   return (
-    <main className={` Uppermain-bgcolor h-[80vh] flex flex-col justify-between items-center p-4 w-full  ${darkMode ? 'bg-black text-white' : 'bg-[#9ff4ff] text-black'}`}>
-      <header className='z-0 flex justify-between text-white w-full items-center'>
+    <main className={` Uppermain-bgcolor h-[60vh] md:h-[80vh] flex flex-col justify-between items-center p-4 w-full  ${darkMode ? 'bg-black text-white' : 'bg-[#9ff4ff] text-black'}`}>
+      <header className='z-0 flex justify-between text-white w-full md:items-center items-baseline h-[30%]'>
         <div className="logo mb-4 md:mb-0">
-          <h2 className="text-2xl md:text-3xl font-extrabold">ExamEase</h2>
+          <h2 className="text-2xl md:text-3xl font-extrabold logo-color">ExamEase</h2>
         </div>
+        <div className="flex gap-3 justify-center  mt-4 md:mt-0">
         <Navbar darkMode={darkMode} />
-        <div className="flex gap-3 justify-center items-center mt-4 md:mt-0">
           <div className="screenmode">
             <button onClick={toggleDarkMode} className=" p-2 rounded">
               {darkMode ? (
-                <span className="material-symbols-outlined">light_mode</span>
+                <span className="material-symbols-outlined fill-white">light_mode</span>
               ) : (
                 <span className="material-symbols-outlined">dark_mode</span>
               )}
@@ -43,16 +43,16 @@ const Uppermain = () => {
         </div>
       </header>
       <div className="main-taglines flex flex-col items-center justify-center text-center mt-8 md:mt-16">
-        <div className='text-[#ffffff] flex flex-col items-center justify-center'>
+        <div className='text-[#3a0b0b] flex flex-col items-center justify-center'>
           <h1 className='font-bold text-3xl md:text-5xl'>{tagline1}</h1>
           <h1 className='font-bold text-3xl md:text-5xl'>{tagline2}</h1>
         </div>
-        <p className='font-[400] text-lg md:text-2xl text-[#00fff2] mt-4'>
+        <p className='font-[400] text-lg md:text-2xl text-[#000000] mt-4 font-sourgummy'>
           Engaging quizzes designed to sharpen your mind and boost your confidence!
         </p>
       </div>
       <div className="start-btn mt-8">
-         <Link to="/categories" className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition">
+         <Link to="/ExamEase/categories" className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition">
           {buttonText}
         </Link>
       </div>

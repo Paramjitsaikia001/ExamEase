@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-
 const Footer = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
-    <footer className="bg-gray-800 text-white py-6 mt-12">
+    <footer className="bg-gray-800 text-white py-6 ">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-between">
           {/* About Section */}

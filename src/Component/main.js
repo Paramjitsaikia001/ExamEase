@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect} from 'react';
 import Uppermain from './Uppermain';
 import images from './images';
 import { Link } from 'react-router-dom';
-
 const RandomSec = [
   { name: "random01" },
   { name: "random02" },
@@ -11,12 +10,15 @@ const RandomSec = [
 ];
 
 const Main = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
-    <section className='flex flex-col w-full h-full overflow-x-hidden bg-[#00e1ff]'>
+    <section className='  flex flex-col w-full h-full overflow-x-hidden pb-[5rem] bg-[#00e1ff]'>
       <Uppermain />
-      <div className="categories bg-[#00e1ff]">
-        <div className="categories-header p-b-3 flex items-center justify-center">
-          <h2 className='text-[3rem] font-bold'>Categories</h2>
+      <div className="categories bg-[#00e1ff] py-12">
+        <div className="categories-header p-b-3 flex items-center justify-start px-6">
+          <h2 className='text-[3rem] font-bold text-[#0d2642]'>Categories</h2>
         </div>
         <div className="categories-container flex justify-start items-center gap-4 p-4 overflow-x-auto whitespace-nowrap ">
           <div className="category bg-gray-200 p-1 rounded-xl shadow-md w-[25rem] h-[23rem] flex-shrink-0 snap-center flex flex-col justify-between items-center">
@@ -59,9 +61,9 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <div className="random-quiz bg-[#00e1ff] pt-8">
-        <div className="random-heade p-b-3 flex items-center justify-center">
-        <h2 className='text-[3rem] font-bold'>Random Quiz</h2>
+      <div className="random-quiz bg-[#00e1ff] py-8">
+        <div className="random-heade p-b-3 flex items-center justify-start px-6  ">
+        <h2 className='text-[3rem] font-bold  text-[#0d2642]'>Random Quiz</h2>
         </div>
       </div>
       <div className="categories-container flex justify-start items-center gap-4 p-4 overflow-x-auto whitespace-nowrap scrollbar-thin scrollbar-thumb-blue-500 scrollbar-track-gray-200">

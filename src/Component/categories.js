@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import images from "./images";
 import Uppermain from './Uppermain.js'
-
 const categories = [
   { name: "General Knowledge", desc: "Test your general knowledge with a variety of questions.", img: images.GK },
   { name: "Science & Technology", desc: "Explore the wonders of science and technology.", img: images.ST },
@@ -22,18 +21,21 @@ const categories = [
 ];
 
 const Categories = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
-    <div className="categories bg-[#00e1ff] w-full overflow-hidden">
+    <div className="categories bg-[#3873e0] w-full overflow-hidden pb-[5rem] ">
       {/* Header */}
       <Uppermain />
-      <div className="categories-header pb-3 flex items-center justify-center rounded-sm">
-        <h2 className="text-[2rem] md:text-[3rem] font-bold text-black">Categories</h2>
+      <div className="categories-header pb-3 flex items-center justify-center rounded-sm py-12">
+        <h2 className="text-[2rem] md:text-[3rem] font-bold text-[#000102]">Categories</h2>
       </div>
 
       {/* Categories List - Horizontal Scroll */}
-      <div className="categories-container flex gap-4 flex-wrap px-4 justify-center items-center">
+      <div className="categories-container flex gap-4 flex-wrap px-4 justify-center items-center rounded-t-3xl">
         {categories.map((category, index) => (
-          <div key={index} className="category bg-gray-200 p-1 rounded-xl shadow-md w-full sm:w-[45%] md:w-[30%] h-[20rem] md:h-[23rem] flex-shrink-0 snap-center flex flex-col justify-between items-center">
+          <div key={index} className="category bg-gray-200 p-1 rounded-xl shadow-md w-full sm:w-[45%] md:w-[30%] h-[25rem] md:h-[23rem] flex-shrink-0 snap-center flex flex-col justify-between items-center">
             <img src={category.img} alt={category.name} className="w-full h-[10rem] md:h-[12rem] object-cover rounded" />
             <h3 className="font-bold text-lg mt-2 text-center">{category.name}</h3>
             <p className="text-sm text-center">{category.desc}</p>

@@ -1,8 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import images from "./images";
 import Uppermain from './Uppermain.js'
-
+import React, { useEffect } from "react";
 const RandomsSEC = [
   { name: "random01"},
   { name: "random02"},
@@ -16,20 +14,23 @@ const RandomsSEC = [
 ];
 
 const Random= () => {
+   useEffect(() => {
+    window.scrollTo(0, 0);
+   }, []);
    return (
-      <div className="random bg-[#00e1ff] w-full overflow-x-hidden">
+      <div className="random bg-[#00e1ff] w-full overflow-x-hidden ">
          {/* Header */}<Uppermain/>
-         <div className="categories-header pb-3 flex items-center justify-center rounded-sm">
+         <div className="categories-header pb-3 flex items-center justify-center rounded-sm pt-12">
             <h2 className="text-[3rem] font-bold text-black text-center">Random Quiz </h2>
          </div>
 
          {/* RandomList - Horizontal Scroll */}
-         <div className="categories-container flex gap-4 flex-wrap px-4 justify-center items-center">
+         <div className="categories-container flex gap-4 flex-wrap px-4 justify-center items-center pb-[5rem]">
             {RandomsSEC.map((category, index) => (
                <div key={index} className="category bg-gray-200 p-1 rounded-md shadow-md w-full sm:w-[45%] md:w-[30%] lg:w-[20%] h-auto flex-shrink-0 snap-center flex flex-col justify-between items-center">
                   <h3 className="font-bold text-lg mt-2 text-center">{category.name}</h3>
                   <Link
-                     to={`/quiz/${category.name}`}
+                     to={`/ExamEase/quiz/${category.name}`}
                      className="block bg-blue-500 text-white p-2 w-[80%] mt-2 text-center hover:bg-blue-600 transition rounded-full"
                   >
                      Start {category.name} Quiz
