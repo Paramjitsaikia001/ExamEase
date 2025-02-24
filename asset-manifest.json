@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.css": "/ExamEase/static/css/main.8074ccf9.css",
-    "main.js": "/ExamEase/static/js/main.8ff38491.js",
+    "main.css": "/ExamEase/static/css/main.f155523e.css",
+    "main.js": "/ExamEase/static/js/main.b38832ca.js",
     "static/js/453.0a36081d.chunk.js": "/ExamEase/static/js/453.0a36081d.chunk.js",
+    "static/media/StyleScript-Regular.ttf": "/ExamEase/static/media/StyleScript-Regular.0ece750d1a7a36496e76.ttf",
+    "static/media/PlayfairDisplay-VariableFont_wght.ttf": "/ExamEase/static/media/PlayfairDisplay-VariableFont_wght.bf46a6bcddc9999a295e.ttf",
+    "static/media/Poppins-Regular.ttf": "/ExamEase/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/SourGummy-VariableFont_wdth,wght.ttf": "/ExamEase/static/media/SourGummy-VariableFont_wdth,wght.a1a8a759263dcbc35092.ttf",
     "index.html": "/ExamEase/index.html",
-    "main.8074ccf9.css.map": "/ExamEase/static/css/main.8074ccf9.css.map",
-    "main.8ff38491.js.map": "/ExamEase/static/js/main.8ff38491.js.map",
+    "main.f155523e.css.map": "/ExamEase/static/css/main.f155523e.css.map",
+    "main.b38832ca.js.map": "/ExamEase/static/js/main.b38832ca.js.map",
     "453.0a36081d.chunk.js.map": "/ExamEase/static/js/453.0a36081d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8074ccf9.css",
-    "static/js/main.8ff38491.js"
+    "static/css/main.f155523e.css",
+    "static/js/main.b38832ca.js"
   ]
 }
