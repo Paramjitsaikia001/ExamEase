@@ -26,8 +26,8 @@ const Uppermain = () => {
     <main className={`  h-[60vh] md:h-[80vh] flex flex-col justify-between items-center p-4 w-full  ${darkMode ? 'Uppermain-bgcolor-dark' : 'Uppermain-bgcolor'}`}>
       <header className='z-0 flex justify-between text-white w-full md:items-center items-baseline h-[30%]'>
         <div className="logo mb-4 md:mb-0">
-          <Link to="/ExamEase/">
-          <h2 className={`text-2xl md:text-3xl font-stylescript font-extrabold ${darkMode?'text-[#17a2ff]':'logo-color'} `}>ExamEase</h2></Link>
+          <Link to="/ExamEase/categories"></Link>
+          <h2 className={`text-2xl md:text-3xl font-stylescript font-extrabold ${darkMode?'text-[#17a2ff]':'text-[#ff000a]'} `}>ExamEase</h2>
         </div>
         <div className="flex gap-3 justify-center  mt-4 md:mt-0">
         <Navbar darkMode={darkMode} />
