@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ExamEase/static/css/main.c7027f5d.css",
-    "main.js": "/ExamEase/static/js/main.d6f30237.js",
+    "main.css": "/ExamEase/static/css/main.2f1c78a6.css",
+    "main.js": "/ExamEase/static/js/main.b9ede92a.js",
     "static/js/453.0a36081d.chunk.js": "/ExamEase/static/js/453.0a36081d.chunk.js",
     "index.html": "/ExamEase/index.html",
-    "main.c7027f5d.css.map": "/ExamEase/static/css/main.c7027f5d.css.map",
-    "main.d6f30237.js.map": "/ExamEase/static/js/main.d6f30237.js.map",
+    "main.2f1c78a6.css.map": "/ExamEase/static/css/main.2f1c78a6.css.map",
+    "main.b9ede92a.js.map": "/ExamEase/static/js/main.b9ede92a.js.map",
     "453.0a36081d.chunk.js.map": "/ExamEase/static/js/453.0a36081d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c7027f5d.css",
-    "static/js/main.d6f30237.js"
+    "static/css/main.2f1c78a6.css",
+    "static/js/main.b9ede92a.js"
   ]
 }
