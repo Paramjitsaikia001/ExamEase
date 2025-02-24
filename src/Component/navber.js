@@ -11,13 +11,13 @@ const Navbar = ({ darkMode }) => {
 
   const getButtonText = () => {
     switch (location.pathname) {
-      case '/':
+      case '/ExamEase/':
         return 'Home';
-      case '/categories':
+      case '/ExamEase/categories':
         return 'Categories';
-      case '/Random':
+      case '/ExamEase/Random':
         return 'Random';
-      case '/about':
+      case '/ExamEase/about':
         return 'About us';
       default:
         return 'Menu';
@@ -32,16 +32,16 @@ const Navbar = ({ darkMode }) => {
         </button>
       </div>
       <ul className={`flex flex-col md:flex-row md:w-auto justify-evenly px-12 items-center rounded-full ${darkMode ? 'md:bg-[#3be8ff] text-black' : 'md:bg-[#9ff4ff] text-black'} h-auto md:h-8 ${isOpen ? 'block' : 'hidden'} md:flex`}>
-        <Link to="/" onClick={() => setIsOpen(false)}>
+        <Link to="/ExamEase/" onClick={() => setIsOpen(false)}>
           <li className='h-full flex justify-center items-center list-none hover:bg-blue-400 px-5 py-2 md:py-0 rounded-full hover:font-semibold cursor-pointer'>Home</li>
         </Link>
-        <Link to="/categories" onClick={() => setIsOpen(false)}>
+        <Link to="/ExamEase/categories" onClick={() => setIsOpen(false)}>
           <li className='h-full flex justify-center items-center list-none hover:bg-blue-400 px-5 py-2 md:py-0 rounded-full hover:font-semibold cursor-pointer'>Categories</li>
         </Link>
-        <Link to="/Random" onClick={() => setIsOpen(false)}>
+        <Link to="/ExamEase/Random" onClick={() => setIsOpen(false)}>
           <li className='h-full flex justify-center items-center list-none hover:bg-blue-400 px-5 py-2 md:py-0 rounded-full hover:font-semibold cursor-pointer'>Random</li>
         </Link>
-        <Link to="/about" onClick={() => setIsOpen(false)}>
+        <Link to="/ExamEase/about" onClick={() => setIsOpen(false)}>
           <li className='h-full flex justify-center items-center list-none hover:bg-blue-400 px-5 py-2 md:py-0 rounded-full hover:font-semibold cursor-pointer'>About us</li>
         </Link>
       </ul>

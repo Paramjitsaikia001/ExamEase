@@ -24,7 +24,7 @@ const Main = () => {
             <h3 className="font-bold text-lg">General Knowledge</h3>
             <p className="text-sm">Test your general knowledge with a variety of questions.</p>
             <Link
-              to={`/ExamEase/my-project/build/quiz/General Knowledge`}
+              to={`/ExamEase/quiz/General Knowledge`}
               className="block bg-blue-500 text-white p-2 w-[80%] mt-2 text-center hover:bg-blue-600 transition rounded-full ">Start General Knowledge Quiz</Link>
           </div>
           <div className="category bg-gray-200 p-1 rounded-xl shadow-md w-[25rem] h-[23rem] flex-shrink-0 snap-center flex flex-col justify-between items-center">
@@ -32,25 +32,25 @@ const Main = () => {
             <h3 className="font-bold text-lg">Science & Technology</h3>
             <p className="text-sm ">Explore the wonders of science and technology.</p>
             <Link
-              to={`/ExamEase/my-project/build/quiz/Science & Technology`} className="block bg-blue-500 text-white p-2 w-[80%] mt-2 text-center hover:bg-blue-600 transition rounded-full ">Start Science & Technology Quiz</Link>
+              to={`/ExamEase/quiz/Science & Technology`} className="block bg-blue-500 text-white p-2 w-[80%] mt-2 text-center hover:bg-blue-600 transition rounded-full ">Start Science & Technology Quiz</Link>
           </div>
           <div className="category bg-gray-200 p-1 rounded-xl shadow-md w-[25rem] h-[23rem] flex-shrink-0 snap-center flex flex-col justify-between items-center">
             <img src={images.Math} alt="Mathematics" className='w-full h-32 object-cover rounded' />
             <h3 className="font-bold text-lg">Mathematics</h3>
             <p className="text-sm">Challenge your math skills with various problems.</p>
             <Link
-              to={`/ExamEase/my-project/build/quiz/Mathematics`} className="block bg-blue-500 text-white p-2 w-[80%] mt-2 text-center hover:bg-blue-600 transition rounded-full ">Start Mathematics Quiz</Link>
+              to={`/ExamEase/quiz/Mathematics`} className="block bg-blue-500 text-white p-2 w-[80%] mt-2 text-center hover:bg-blue-600 transition rounded-full ">Start Mathematics Quiz</Link>
           </div>
           <div className="category bg-gray-200 p-1 rounded-xl shadow-md w-[25rem] h-[23rem] flex-shrink-0 snap-center flex flex-col justify-between items-center">
             <img src={images.History} alt="History & Geography" className='w-full h-32 object-cover rounded' />
             <h3 className="font-bold text-lg">History & Geography</h3>
             <p className="text-sm">Dive into history and geography with engaging quizzes.</p>
             <Link
-              to={`/ExamEase/my-project/build/quiz/History & Geography`} className="block bg-blue-500 text-white p-2 w-[80%] mt-2 text-center hover:bg-blue-600 transition rounded-full ">Start History & Geography Quiz</Link>
+              to={`/ExamEase/quiz/History & Geography`} className="block bg-blue-500 text-white p-2 w-[80%] mt-2 text-center hover:bg-blue-600 transition rounded-full ">Start History & Geography Quiz</Link>
           </div>
           <div className="more-categories w[30%] flex justify-center items-center ">
             <Link
-              to={`/ExamEase/my-project/build/categories`} className=" text-[#1f1e1e] p-2 w-[8rem] h-[8rem] flex justify-center  rounded-full l border-2 border-[#1f1e1e] items-center text-xl gap-1 hover:bg-[#2668a7]">
+              to={`/ExamEase/categories`} className=" text-[#1f1e1e] p-2 w-[8rem] h-[8rem] flex justify-center  rounded-full l border-2 border-[#1f1e1e] items-center text-xl gap-1 hover:bg-[#2668a7]">
               <p className='text=xl font-semibold'>More</p>
               <span className="material-symbols-outlined font-bold">
                 arrow_forward
@@ -69,7 +69,7 @@ const Main = () => {
           <div key={index} className="category bg-gray-200 p-1 rounded-md shadow-md w-[25rem] h-[20%] flex-shrink-0 snap-center flex flex-col justify-between items-center">
             <h3 className="font-bold text-lg mt-2">{category.name}</h3>
             <Link
-              to={`/ExamEase/my-project/build/quiz/${category.name}`}
+              to={`/ExamEase/quiz/${category.name}`}
               className="block bg-blue-500 text-white p-2 w-[80%] mt-2 text-center hover:bg-blue-600 transition rounded-full"
             >
               Start {category.name} Quiz
@@ -78,7 +78,7 @@ const Main = () => {
         ))}
              <div className="more-categories w[30%] flex justify-center items-center ">
             <Link
-              to={`/ExamEase/my-project/build/Random`} className=" text-[#1f1e1e] p-2 w-[4rem] h-[4rem] flex justify-center  rounded-full l border-2 border-[#1f1e1e] items-center text-xl gap-1 hover:bg-[#2668a7]">
+              to={`/ExamEase/Random`} className=" text-[#1f1e1e] p-2 w-[4rem] h-[4rem] flex justify-center  rounded-full l border-2 border-[#1f1e1e] items-center text-xl gap-1 hover:bg-[#2668a7]">
               <span className="material-symbols-outlined font-bold">
                 arrow_forward
               </span>

@@ -40,7 +40,7 @@ const Categories = () => {
             
             {/* Button to Start Quiz */}
             <Link
-              to={`/quiz/${category.name}`}
+              to={`/ExamEase/quiz/${category.name}`}
               className="block bg-blue-500 text-white p-2 w-[80%] mt-2 text-center hover:bg-blue-600 transition rounded-full"
             >
               Start {category.name} Quiz
