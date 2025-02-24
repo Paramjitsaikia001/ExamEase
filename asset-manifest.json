@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ExamEase/static/css/main.ecbb576d.css",
-    "main.js": "/ExamEase/static/js/main.24d3e154.js",
+    "main.js": "/ExamEase/static/js/main.b3a0ce19.js",
     "static/js/453.0a36081d.chunk.js": "/ExamEase/static/js/453.0a36081d.chunk.js",
     "static/media/logic.png": "/ExamEase/static/media/logic.31f264f5c424e3c212e0.png",
     "static/media/world.png": "/ExamEase/static/media/world.b42e0e1235ad46d3c1bd.png",
@@ -21,11 +21,11 @@
     "static/media/background.jpeg": "/ExamEase/static/media/background.dd1b3a90bb9b3974103f.jpeg",
     "index.html": "/ExamEase/index.html",
     "main.ecbb576d.css.map": "/ExamEase/static/css/main.ecbb576d.css.map",
-    "main.24d3e154.js.map": "/ExamEase/static/js/main.24d3e154.js.map",
+    "main.b3a0ce19.js.map": "/ExamEase/static/js/main.b3a0ce19.js.map",
     "453.0a36081d.chunk.js.map": "/ExamEase/static/js/453.0a36081d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ecbb576d.css",
-    "static/js/main.24d3e154.js"
+    "static/js/main.b3a0ce19.js"
   ]
 }
