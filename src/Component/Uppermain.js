@@ -44,11 +44,11 @@ const Uppermain = () => {
         </div>
       </header>
       <div className="main-taglines flex flex-col items-center justify-center text-center mt-8 md:mt-16">
-        <div className={`${darkMode ?'text-[#fff]': 'text-[#3a0b0b]'} flex flex-col items-center justify-center `}>
+        <div className={`${darkMode ?'text-[#fff]': 'text-[#3a0b0b]'} flex flex-col items-center justify-center shadowX`}>
           <h1 className='font-bold text-3xl md:text-5xl'>{tagline1}</h1>
           <h1 className='font-bold text-3xl md:text-5xl'>{tagline2}</h1>
         </div>
-        <p className={`font-[400] text-lg md:text-2xl ${darkMode?'text-[#14ffff]':'text-[#000000]'}  mt-4 font-sourgummy `}>
+        <p className={`font-[400] text-lg md:text-2xl ${darkMode?'text-[#14ffff]':'text-[#000000]'}  mt-4 font-sourgummy shadowX`}>
           Engaging quizzes designed to sharpen your mind and boost your confidence!
         </p>
       </div>
