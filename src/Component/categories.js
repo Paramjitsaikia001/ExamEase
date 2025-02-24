@@ -36,7 +36,7 @@ const Categories = () => {
         {categories.map((category, index) => (
           <div key={index} className="category bg-gray-200 p-1 rounded-xl shadow-md w-full sm:w-[45%] md:w-[30%] h-[25rem] md:h-[23rem] flex-shrink-0 snap-center flex flex-col justify-between items-center">
             <div className="w-full h-[10rem] md:h-[12rem] object-cover rounded bg-[#afefff] flex items-center justify-center">
-              <h2 className="text-2xl font-pPlayfairDisplay font-bold flex justify-center items-center">{category.name}</h2>
+              <h2 className="text-2xl PlayfairDisplay font-bold flex justify-center items-center">{category.name}</h2>
             </div>
               
             <h3 className="font-bold text-lg mt-2 text-center ">{category.name}</h3>

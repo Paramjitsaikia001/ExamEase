@@ -13,7 +13,7 @@ import TermsOfService from './Component/termsofservice';
 const App = () => {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen bg-[#00e1ff] font-poppins">
+      <div className="flex flex-col min-h-screen bg-[#00e1ff] Poppins">
       <GoogleAnalytics />
         <Routes>
           <Route path="/ExamEase/" element={<Main />} />

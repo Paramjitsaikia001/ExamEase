@@ -22,7 +22,7 @@ const Main = () => {
         <div className="categories-container flex justify-start items-center gap-4 p-4 overflow-x-auto whitespace-nowrap ">
           <div className="category bg-gray-200 p-1 rounded-xl shadow-md w-[25rem] h-[23rem] flex-shrink-0 snap-center flex flex-col justify-between items-center">
             <div className="w-full h-[10rem] md:h-[12rem] object-cover rounded bg-[#afefff] flex items-center justify-center">
-              <h2 className="text-2xl font-pPlayfairDisplay font-bold flex justify-center items-center">General Knowledge</h2>
+              <h2 className="text-2xl PlayfairDisplay font-bold flex justify-center items-center">General Knowledge</h2>
             </div>           <h3 className="font-bold text-lg">General Knowledge</h3>
             <p className="text-sm">Test your general knowledge with a variety of questions.</p>
             <Link
@@ -31,7 +31,7 @@ const Main = () => {
           </div>
           <div className="category bg-gray-200 p-1 rounded-xl shadow-md w-[25rem] h-[23rem] flex-shrink-0 snap-center flex flex-col justify-between items-center">
             <div className="w-full h-[10rem] md:h-[12rem] object-cover rounded bg-[#afefff] flex items-center justify-center">
-              <h2 className="text-2xl font-pPlayfairDisplay font-bold flex justify-center items-center">Science & Technology</h2>
+              <h2 className="text-2xl PlayfairDisplay font-bold flex justify-center items-center">Science & Technology</h2>
             </div>         <h3 className="font-bold text-lg">Science & Technology</h3>
             <p className="text-sm ">Explore the wonders of science and technology.</p>
             <Link
@@ -39,7 +39,7 @@ const Main = () => {
           </div>
           <div className="category bg-gray-200 p-1 rounded-xl shadow-md w-[25rem] h-[23rem] flex-shrink-0 snap-center flex flex-col justify-between items-center">
             <div className="w-full h-[10rem] md:h-[12rem] object-cover rounded bg-[#afefff] flex items-center justify-center">
-              <h2 className="text-2xl font-pPlayfairDisplay font-bold flex justify-center items-center">Mathematics</h2>
+              <h2 className="text-2xl PlayfairDisplay font-bold flex justify-center items-center">Mathematics</h2>
             </div>  <h3 className="font-bold text-lg">Mathematics</h3>
             <p className="text-sm">Challenge your math skills with various problems.</p>
             <Link
@@ -47,7 +47,7 @@ const Main = () => {
           </div>
           <div className="category bg-gray-200 p-1 rounded-xl shadow-md w-[25rem] h-[23rem] flex-shrink-0 snap-center flex flex-col justify-between items-center">
             <div className="w-full h-[10rem] md:h-[12rem] object-cover rounded bg-[#afefff] flex items-center justify-center">
-              <h2 className="text-2xl font-pPlayfairDisplay font-bold flex justify-center items-center">History & Geography</h2>
+              <h2 className="text-2xl PlayfairDisplay font-bold flex justify-center items-center">History & Geography</h2>
             </div>
             <h3 className="font-bold text-lg">History & Geography</h3>
             <p className="text-sm">Dive into history and geography with engaging quizzes.</p>

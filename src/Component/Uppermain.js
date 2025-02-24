@@ -27,7 +27,7 @@ const Uppermain = () => {
       <header className='z-0 flex justify-between text-white w-full md:items-center items-baseline h-[30%]'>
         <div className="logo mb-4 md:mb-0">
           <Link to="/ExamEase/categories"></Link>
-          <h2 className={`text-2xl md:text-3xl font-stylescript font-extrabold ${darkMode?'text-[#17a2ff]':'text-[#ff000a]'} `}>ExamEase</h2>
+          <h2 className={`text-2xl md:text-3xl StyleScript font-extrabold ${darkMode?'text-[#17a2ff]':'text-[#ff000a]'} `}>ExamEase</h2>
         </div>
         <div className="flex gap-3 justify-center  mt-4 md:mt-0">
         <Navbar darkMode={darkMode} />
@@ -40,7 +40,7 @@ const Uppermain = () => {
               )}
             </button>
           </div>
-          <img src={demo_profile} alt="demo profile pic" className='w-8 h-8 md:w-10 md:h-10 rounded-full' />
+          <img src={demo_profile} loading="lazy" alt="demo profile pic" className='w-8 h-8 md:w-10 md:h-10 rounded-full' />
         </div>
       </header>
       <div className="main-taglines flex flex-col items-center justify-center text-center mt-8 md:mt-16">
@@ -48,7 +48,7 @@ const Uppermain = () => {
           <h1 className='font-bold text-3xl md:text-5xl'>{tagline1}</h1>
           <h1 className='font-bold text-3xl md:text-5xl'>{tagline2}</h1>
         </div>
-        <p className={`font-[400] text-lg md:text-2xl ${darkMode?'text-[#14ffff]':'text-[#000000]'}  mt-4 font-sourgummy shadowX`}>
+        <p className={`font-[400] text-lg md:text-2xl ${darkMode?'text-[#14ffff]':'text-[#000000]'}  mt-4  SourGummy shadowX`}>
           Engaging quizzes designed to sharpen your mind and boost your confidence!
         </p>
       </div>
