@@ -29,7 +29,7 @@ const Random= () => {
                <div key={index} className="category bg-gray-200 p-1 rounded-md shadow-md w-full sm:w-[45%] md:w-[30%] lg:w-[20%] h-auto flex-shrink-0 snap-center flex flex-col justify-between items-center">
                   <h3 className="font-bold text-lg mt-2 text-center">{category.name}</h3>
                   <Link
-                     to={`/ExamEase/my-project/build/quiz/${category.name}`}
+                     to={`/quiz/${category.name}`}
                      className="block bg-blue-500 text-white p-2 w-[80%] mt-2 text-center hover:bg-blue-600 transition rounded-full"
                   >
                      Start {category.name} Quiz
